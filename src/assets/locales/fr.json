@@ -1,0 +1,13 @@
+{
+    "ROUTES.services": "service",
+    "ROUTES.blog": "blog",
+    "ROUTES.videos": "videos",
+    "ROUTES.contact": "contactez-nous",
+    "ROUTES.about": "a-propos",
+    "NAV_HOME": "Accueil",
+    "NAV_SERVICES": "Services",
+    "NAV_BLOG": "Blog",
+    "NAV_VIDEOS": "Vidéos",
+    "NAV_CONTACT": "Contactez-nous",
+    "NAV_ABOUT": "A propos"
+}
