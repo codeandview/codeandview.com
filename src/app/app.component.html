@@ -1,1 +1,32 @@
-<h1>{{ title }}</h1>
+<nav class="navbar navbar-expand">
+  <div class="container">
+    <a href="#" routerLink="" class="navbar-brand">
+      Codeandview
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar" aria-controls="#topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="topNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="">{{'NAV_HOME' | translate}}</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="'/blog' | localize">{{ 'NAV_BLOG' | translate }}</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="'/services' | localize">{{'NAV_SERVICES' | translate}}</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="'/about' | localize">{{ 'NAV_ABOUT' | translate }}</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="'/contact' | localize">{{ 'NAV_CONTACT' | translate }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main role="main" class="container">
+  <router-outlet></router-outlet>
+</main>
