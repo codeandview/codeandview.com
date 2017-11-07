@@ -1,0 +1,37 @@
+<header id="js-header" class="u-header u-header--static">
+  <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="topNavbar" data-toggle="collapse" data-target="#topNavbar">
+          <span class="hamburger hamburger--slider">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </span>
+        </button>
+        <a routerLink="" class="navbar-brand">
+          <img src="/assets/logo_codeandview_long.svg" alt="Codeandview" height="39">
+        </a>
+        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="topNavbar">
+          <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+            <li class="nav-item  g-mx-10--lg g-mx-15--xl" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+              <a class="nav-link g-py-7 g-px-0" [routerLink]="'/' | localize">{{'NAV_HOME' | translate}}</a>
+            </li>
+            <li class="nav-item  g-mx-10--lg g-mx-15--xl" routerLinkActive="active">
+              <a class="nav-link g-py-7 g-px-0" [routerLink]="'/blog' | localize">{{ 'NAV_BLOG' | translate }}</a>
+            </li>
+            <li class="nav-item  g-mx-10--lg g-mx-15--xl" routerLinkActive="active">
+              <a class="nav-link g-py-7 g-px-0" [routerLink]="'/services' | localize">{{ 'NAV_SERVICES' | translate }}</a>
+            </li>
+            <li class="nav-item  g-mx-10--lg g-mx-15--xl" routerLinkActive="active">
+              <a class="nav-link g-py-7 g-px-0" [routerLink]="'/about' | localize">{{ 'NAV_ABOUT' | translate }}</a>
+            </li>
+            <li class="nav-item  g-mx-10--lg g-mx-15--xl" routerLinkActive="active">
+              <a class="nav-link g-py-7 g-px-0" [routerLink]="'/contact' | localize">{{ 'NAV_CONTACT' | translate }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

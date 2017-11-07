@@ -19,14 +19,26 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
         "../node_modules/font-awesome/css/font-awesome.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.css"
+        "assets/fonts/icon-line-pro/style.css",
+        "assets/fonts/icon-hs/style.css",
+        "../node_modules/animatewithsass/animate.scss",
+        "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss",
+        "scss/unify.scss",
+        "styles.scss"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/jquery-migrate/dist/jquery-migrate.js",
+        "../node_modules/jquery.easing/jquery.easing.js",
         "../node_modules/popper.js/dist/umd/popper.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "assets/scripts/core.js",
+        "assets/scripts/components/hs.header.js",
+        "assets/scripts/helpers/hs.hamburgers.js",
+        "assets/scripts/components/hs.tabs.js",
+        "assets/scripts/components/hs.go-to.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
